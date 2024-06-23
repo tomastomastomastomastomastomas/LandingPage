@@ -8,7 +8,9 @@ a{
   text-decoration: none;
   color: black;
 }
-
+ul{
+  list-style: none;
+}
 
 
 .menu{
@@ -17,6 +19,7 @@ a{
 
 #burger-menu
 {
+  width: 33%;
   display: block;
   position: relative;
   top: 0px;
