@@ -1,0 +1,123 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background: lightblue;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.menu{
+  background-color: white;
+}
+
+#burger-menu
+{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 50px;   
+  z-index: 1;
+}
+#burger-menu input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 3;
+}
+#burger-button
+{
+  width: 40px;
+  height: 40px; 
+  margin: 0;  
+  padding: 0;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+#burger-button span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  top: 7.50px;
+  left: 8px;
+  margin-bottom: 5px;
+  position: relative;
+  background: black;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+#burger-button span:first-child
+{
+  transform-origin: 0% 0%;
+}
+#burger-button span:last-child
+{
+  transform-origin: 0% 100%;
+}
+#burger-menu input:checked ~ #burger-button span:first-child
+{
+  opacity: 1;
+  transform: rotate(44deg) translate(1px, -1px);
+  background: white;
+}
+#burger-menu input:checked ~ #burger-button span:nth-last-child(2)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  background: white;
+}
+#burger-menu input:checked ~ #burger-button span:last-child
+{
+  opacity: 1;
+  transform: rotate(-44deg) translate(-1px, 4px);
+  background: white;
+}
+#burger-menu input:checked ~ #burger-button
+{
+  z-index: 2;
+  opacity: 1;
+  background: blue;
+  border-radius: 100px;
+  display: block;
+}
+
+#burger-content
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+#burger-content li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#burger-menu input:checked ~ #burger-content
+{
+  transform: none;
+}
