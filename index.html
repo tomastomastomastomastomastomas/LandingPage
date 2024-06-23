@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
+        <div class="contacts">
             <div>
                 <img src="imgs/icons/email.svg" alt="email">
                 <span>Info@youremail.com</span>
@@ -24,25 +27,31 @@
                 <li><a href=""><img src="imgs/icons/youtube.svg" alt="youtube"></a></li>
             </ul>
         </div>
-        <nav class="menu">
-            <div id="burger-menu">
-                <input type="checkbox"/>
-                <div id="burger-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <div id="menu">
+            <nav class="menu">
+                <div id="burger-menu">
+                    <input type="checkbox"/>
+                    <div id="burger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="burger-content">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-                <ul id="burger-content">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <img src="imgs/icons/logo.svg" alt="logo">
-            <button>Download</button>
-        </nav>
+                <div class="logo-box">
+                    <img id="logo" src="imgs/icons/logo.svg" alt="logo">
+                </div>
+                <div class="download-box">
+                    <button class="download-button white-font">DOWNLOAD</button>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
@@ -51,20 +60,20 @@
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <span>Download App Now</span>
                 <a href="">
-                    <img src="imgs/content/google-play.png" alt="google play">
+                    <img style="width: 100%;" src="imgs/content/google-play.png" alt="google play">
                 </a>
                 <a href="">
-                    <img src="imgs/content/app-store.png" alt="app store">
+                    <img style="width: 100%;" src="imgs/content/app-store.png" alt="app store">
                 </a>
             </div>
-            <img src="imgs/content/app-image0.png" alt="app image">
+            <img style="width: 100%;" src="imgs/content/app-image0.png" alt="app image">
         </section>
-        <section>
+        <section class="background-color">
             <div>
                 <h2>About Our App</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
             </div>
-            <img src="imgs/content/app-image2.png" alt="image app">
+            <img style="width: 100%;" src="imgs/content/app-image2.png" alt="image app">
             <div>
                 <div>
                     <img src="imgs/icons/checkbox-circle.svg" alt="checkbox circle">
@@ -86,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="background-image">
             <h2>App features</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
             <div>
@@ -104,7 +113,7 @@
                 <h4>awsome ui design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <img src="imgs/content/app-image1.png" alt="">
+            <img style="width: 100%;" src="imgs/content/app-image1.png" alt="">
             <div>
                 <img src="imgs/icons/cell-phone.svg" alt="">
                 <h4>iso & androind version</h4>
@@ -121,7 +130,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </section>
-        <section>
+        <section class="background-color">
             <h2>Our reative team</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
             <div>
@@ -161,7 +170,7 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="background-color">
             <div>
                 <img src="imgs/icons/email.svg" alt="email">
                 <span>info@youremail.com</span>
