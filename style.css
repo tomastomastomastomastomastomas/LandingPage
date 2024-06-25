@@ -37,7 +37,6 @@ footer{
 .background-image{
   background-image: url(imgs/background/background.png);
   width: 100%;
-  background-size: cover;
 }
 .background-color{
   background-color: white;
