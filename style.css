@@ -17,8 +17,11 @@ h1, h2, h3, h4, h5 a, p, span, input, button, li{
   }
 }
 
-
-
+@media (max-width: 426px) {
+  .contacts{
+    display: none;
+  }
+}
 .white-font{
   color: white;
 }
@@ -64,54 +67,6 @@ footer{
 
 
 
-.hero-section{
-  display: flex; justify-content: center; align-items: center; flex-direction: column;
-}
-.hero-box{
-  margin-top: 150px; 
-  width: 300px; 
-  align-self: start; 
-  display: flex; 
-  flex-direction: column; 
-  padding: 4%; 
-  position: relative;
-}
-
-.hero-box::after{
-
-  width: 323px;
-  height: 358px;
-  position: absolute;
-  background-color: black;
-  right: 10px;
-  border: 10px solid #7572FF;
-  z-index: 2;
-}
-.hero-title{
-  font-size: 24px; 
-  font-weight: 600;
-  line-height: 37.5px;
-  text-align: left;
-}
-.hero-content{
-  font-size: 16px; 
-  font-weight: 400; 
-  color: #6C6C72; 
-  margin-top: 0; 
-  margin-bottom: 0;
-}
-
-.contacts-box{
-  display: flex; align-content: center; margin: 0
-}
-.contacts-icon{
-  height: 18px;
-}
-@media (max-width: 426px) {
-  .contacts{
-    display: none;
-  }
-}
 
 
 
