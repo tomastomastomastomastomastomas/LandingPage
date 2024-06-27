@@ -16,8 +16,17 @@ h1, h2, h3, h4, h5 a, p, span, input, button, li{
     background-size:auto;
   }
 }
-
-
+.content{
+  font-size: 16px;
+  font-weight: 400;
+}
+.title{
+  font-size: 20px;
+  font-weight: 600;
+}
+.grey{
+  color: grey;
+}
 
 .white-font{
   color: white;
@@ -83,7 +92,7 @@ footer{
   align-self: center;
   justify-self: end;
   margin-top: 60px;
-  margin-bottom: 130px;
+  margin-bottom: 0px;
 }
 .hero-image::after{
   height: 30px;
@@ -108,8 +117,7 @@ footer{
 .hero-download{
   margin: 5% 0; 
   font-size: 20px; 
-  font-weight: 600; 
-  line-height: 30px;
+  font-weight: 600; line-height: 30px;
 }
 .hero-store{
   display: flex; 
