@@ -405,4 +405,23 @@ footer{
     margin-top: 18px;
     margin-bottom: 50px;
   }
+
+  .contact-section{
+    display: flex; align-self: center; position: relative; bottom: -190px; height: 310px; flex-direction: column; padding: 9% 4%; box-shadow: 0px 0px 20px 1px #0000001A; border-radius: 10px; width: 80%;
+  }
+  main{
+    display: flex; flex-direction: column;
+  }
+  .contact-1, .contact-2{
+    height: 50%; display: flex; flex-direction: column; align-items: center; gap: 20px; justify-content: start;
+  }
+  .contact-2{
+    justify-content: end;
+  }
+  .contact-icon-background{
+    background-color: royalblue; height: 45px; width: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+  }
+  .contact-icon{
+    height: 20px;
+  }
 }
