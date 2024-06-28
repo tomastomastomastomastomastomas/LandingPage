@@ -36,6 +36,7 @@ ul{
 }
 footer{
   background: #232233;
+  padding: 250px 20px 40px 20px ;
 }
 .background-image{
   background-image: url(imgs/background/background.png);
@@ -423,5 +424,61 @@ footer{
   }
   .contact-icon{
     height: 20px;
+  }
+
+  .page-social{
+    display: flex; padding: 0; width: 100%; justify-content: start;;
+  }
+  .page-social li{
+    width: 20%;
+    border-right: 1px solid white;
+    height: 24px;
+  }
+  .page-social li:last-child{
+    border-right: 0px;
+  }
+  
+  .footer-logo{
+    font-size: 31.25px; font-weight: 700; line-height: 47.25px;
+  }
+  .footer-social{
+    display: flex; justify-content: center;
+    display: flex; justify-content: center;
+    display: flex; justify-content: center;
+    display: flex; justify-content: center;
+  }
+  .footer-links{
+    margin-top: 50px;
+  }
+  .footer-link-box{
+    padding-left: 0;
+  }
+  .footer-link{
+    padding-bottom: 10px
+  }
+  .footer-contact-box{
+    margin-top: 65px;
+    margin-bottom: 60px;
+  }
+  .footer-contact{
+    display: flex; width: 100%; background-color: white; border-radius: 4px; margin-top: 30px;
+  }
+  .footer-contact input{
+    height: 50px; border: 1px solid white; border-radius: 4px 0 0 4px; width: 85%;
+  }
+  .footer-contact button{
+    background-color: royalblue; border: 1px solid white; height: 50x; width: 50px; border-radius: 5px;
+  }
+  hr{
+    background-color: white; border: 0.5px solid white;margin-bottom: 25px;
+  }
+  .copyright-box{
+    display: flex; justify-content: center; align-items: center;
+  }
+  .copyright{
+    font-size: 12.8px; font-weight: 300; text-align: center;
+  }
+  .footer-contact-box .content{
+    padding-top: 10px;
   }
 }
