@@ -303,4 +303,26 @@ footer{
   .about-feature-content{
     margin: 0% 4%;
   }
+
+  .feature-section{
+    text-align: center; display: flex; flex-direction: column; align-items: center; padding-bottom: 50px;
+  }
+  .feature-title{
+    padding-top: 80px;
+  }
+  .feature-content{
+    padding: 0 40px;
+  }
+  .feature-box{
+    margin-top: 45px;
+  }
+  .feature{
+    padding: 0 90px; line-height: 30px;
+  }
+  .feature-info{
+    padding: 0 70px; line-height: 24px;
+  }
+  .feature-image{
+    height: 468px; margin-left: 37px; margin-top: 15px;
+  }
 }
