@@ -195,9 +195,11 @@ footer{
   transform: none;
 }
 
-@media (max-width: 426px){
   .contacts{
     display: none;
+  }
+  header{
+    margin-top: 30px;
   }
 
   .content{
@@ -230,19 +232,21 @@ footer{
   }
 
   .hero-border{
-    border: 10px solid #7572FF; margin: 120px 2% 0 0%; padding: 3% 0; justify-self: end; right: 0;
+    border: 10px solid #7572FF; margin: 120px 2% 0 0%; padding: 3% 0; right: 0; width: 75%; justify-content: start; max-width: 400px;
   }
   .hero-section{
-    display: flex; justify-content: center; align-items: flex-end; flex-direction: column;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    border: 1px blue solid;
   }
   .hero-box{
-    width: 300px; 
+    width: 100%;
+    margin-left: 50px; 
     align-self: start; 
     display: flex; 
     flex-direction: column; 
     padding: 4%; 
     position: relative;
-    left: -35px;
+    left: -85px;
   }
   .hero-image{
     height: 521px;
@@ -461,10 +465,10 @@ footer{
     margin-bottom: 60px;
   }
   .footer-contact{
-    display: flex; width: 100%; background-color: white; border-radius: 4px; margin-top: 30px;
+    display: flex; width: 100%; background-color: white; border-radius: 4px; margin-top: 30px; justify-content: end;
   }
   .footer-contact input{
-    height: 50px; border: 1px solid white; border-radius: 4px 0 0 4px; width: 85%;
+    height: 50px; border: 1px solid white; border-radius: 4px 0 0 4px; width: 100%;
   }
   .footer-contact button{
     background-color: royalblue; border: 1px solid white; height: 50x; width: 50px; border-radius: 5px;
@@ -481,4 +485,3 @@ footer{
   .footer-contact-box .content{
     padding-top: 10px;
   }
-}
