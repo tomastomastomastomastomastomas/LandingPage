@@ -603,4 +603,23 @@ hr{
   .contact-icon{
     height: 24px;
   }
+  .contact-icon-background{
+    background-color: royalblue; height: 60px; width: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+  }
+  
+  .footer-content{
+    display: flex; align-content: start;
+  }
+  .footer-content div:nth-child(2){
+    width: 44%; margin-top: 5px;
+  }
+  .footer-content div:first-child{
+    width: 44%; margin-top: 0; padding: 0 2% 0 0; 
+  }
+  .footer-contact-box{
+    margin-top: 5px; margin-left: 20px;
+  }
+  .footer-contact{
+    width: 100%;
+  }
 }
