@@ -1,6 +1,4 @@
-
-body
-{
+body{
   margin: 0;
   padding: 0;
   background-image: url(imgs/background/background.png); background-repeat: no-repeat; background-size: contain;
@@ -50,7 +48,14 @@ footer{
 .contacts-box{
   display: flex; 
   align-content: center; 
-  margin: 0
+  margin: 0;
+  gap: 10px;
+}
+.contacts-box:nth-child(2){
+  margin-right: 70px;
+}
+.contacts-box:last-child{
+  gap: 20px;
 }
 .contacts-icon{
   height: 18px;
@@ -197,6 +202,7 @@ footer{
 
 .contacts{
   display: none;
+  margin: 0 5%
 }
 header{
   margin-top: 30px;
@@ -411,6 +417,7 @@ header{
   margin-top: 85px;
 }
 .profile-content{
+  margin:0 200px;
   margin-top: 18px;
   margin-bottom: 50px;
 }
