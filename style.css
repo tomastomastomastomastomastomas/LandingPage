@@ -488,8 +488,13 @@ hr{
 }
 
 @media (min-width: 767px) {
+  .contacts{
+    display: flex;
+    justify-content: space-between;
+  }
+
   .hero-section{
-    flex-direction: row; align-items: center; margin-top: 210px; margin-bottom: 180px; justify-content: space-between; padding: 0 80px;
+    flex-direction: row; align-items: center; margin-top: 210px; margin-bottom: 180px; justify-content: space-evenly; padding: 0 80px;
   }
   .hero-border{
     border: 15px solid #7572FF; margin: 0px 2% 0 0%; padding: 2% 0; max-width: 45%;
@@ -504,6 +509,7 @@ hr{
   .hero-image{
     height: 423px;
     margin: 0;
+    margin-left: 50px;
   }
 
   .about-content{
@@ -522,5 +528,39 @@ hr{
   }
   .about-features-box{
     margin-right: 25px;
+  }
+
+  .feature-group{
+    display: flex;
+  }
+  .features *{
+    text-align: right;
+    padding: 0;
+  }
+  .features h4{
+    margin: 5% 0;
+  }
+  .features:last-child *{
+    text-align: left;
+  }
+  .features:first-child{
+    right: -50px;
+    position: relative;
+  }
+  .features .feature-box:last-child{
+    margin-top: 65px;
+  }
+  .features:last-child .feature-box{
+    left: -55px;
+    position: relative;
+  }
+  .features:last-child .feature-box:last-child{
+    margin-top: 30px;
+  }
+  .feature-image{
+    height: 500px;
+  }
+  .feature-box:nth-child(3) p, .feature-box:nth-child(5) p{
+    padding: 0 15%;
   }
 }
