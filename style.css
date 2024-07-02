@@ -377,7 +377,7 @@ header{
   z-index: 2;
 }
 .profile-image{
-  width: 95%; ; align-self: center; z-index: 3;
+  width: 160px; align-self: center; z-index: 3; height: 160px;
 }
 .profile-name{
   font-size: 31.25px;
@@ -432,6 +432,9 @@ main{
 }
 .contact-icon{
   height: 20px;
+}
+.contact-division{
+  border: 2px solid black; width: 30%; align-self: center;
 }
 
 .page-social{
@@ -551,7 +554,7 @@ hr{
     margin-top: 65px;
   }
   .features:last-child .feature-box{
-    left: -55px;
+    right: 55px;
     position: relative;
   }
   .features:last-child .feature-box:last-child{
@@ -562,5 +565,42 @@ hr{
   }
   .feature-box:nth-child(3) p, .feature-box:nth-child(5) p{
     padding: 0 15%;
+  }
+  .profiles{
+    display: flex; gap: 35px;
+  }
+  .profile-container {
+    width: 175px;
+    height: 175px;
+  }
+  .profile-box{
+    padding: 3% 0%; width: 213px;
+  }
+  .profile-name{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .content-title{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .profile-info{
+    padding: 0% 5%; 
+  }
+
+  .contact-section{
+    display: flex; align-items: center; position: relative; bottom: -100px; height: 150px; padding: 4% 1%; box-shadow: 0px 0px 20px 1px #0000001A; border-radius: 10px; width: 80%; flex-direction: row; justify-content: space-between;
+  }
+  .contact-1, .contact-2{
+    width: 45%; gap: 8px; height: 50%; align-items: center; display: flex; flex-direction: row;
+  }
+  .contact-2{
+    justify-content: start;
+  }
+  .contact-division{
+    border: 2px solid black; height: 85%; align-self: center; width: 0;
+  }
+  .contact-icon{
+    height: 24px;
   }
 }
