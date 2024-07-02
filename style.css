@@ -232,11 +232,10 @@ footer{
   }
 
   .hero-border{
-    border: 10px solid #7572FF; margin: 120px 2% 0 0%; padding: 3% 0; right: 0; width: 75%; justify-content: start; max-width: 400px;
+    border: 10px solid #7572FF; margin: 120px 2% 0 0%; padding: 3% 0; right: 0; width: 75%; justify-content: start; min-width: 300px; max-width: 500px;
   }
   .hero-section{
-    display: flex; justify-content: center; align-items: center; flex-direction: column;
-    border: 1px blue solid;
+    display: flex; justify-content: center; align-items: end; flex-direction: column;
   }
   .hero-box{
     width: 100%;
@@ -246,7 +245,7 @@ footer{
     flex-direction: column; 
     padding: 4%; 
     position: relative;
-    left: -85px;
+    left: -28%;
   }
   .hero-image{
     height: 521px;
@@ -446,9 +445,6 @@ footer{
     font-size: 31.25px; font-weight: 700; line-height: 47.25px;
   }
   .footer-social{
-    display: flex; justify-content: center;
-    display: flex; justify-content: center;
-    display: flex; justify-content: center;
     display: flex; justify-content: center;
   }
   .footer-links{
