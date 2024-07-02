@@ -435,7 +435,7 @@ main{
   justify-content: end;
 }
 .contact-icon-background{
-  background-color: royalblue; height: 45px; width: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+  background-color: royalblue; height: 50px; width: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
 }
 .contact-icon{
   height: 20px;
@@ -543,6 +543,9 @@ hr{
   .feature-group{
     display: flex;
   }
+  .feature-content{
+    padding: 0 25%;
+  }
   .features *{
     text-align: right;
     padding: 0;
@@ -558,7 +561,7 @@ hr{
     position: relative;
   }
   .features .feature-box:last-child{
-    margin-top: 65px;
+    margin-top: 30px;
   }
   .features:last-child .feature-box{
     right: 55px;
@@ -629,4 +632,85 @@ hr{
   .footer-contact{
     width: 100%;
   }
+}
+@media (min-width: 1023px) {
+  .hero-section{
+    flex-direction: row; align-items: center; margin-top: 100px; margin-bottom: 180px; justify-content: space-evenly; padding: 0 80px;
+  }
+  .hero-border{
+    border: 15px solid #7572FF; margin: 0px 2% 0 0%; padding: 2% 0; width: 550px;
+  }
+  .hero-box{
+    left: -25%;
+  }
+  .hero-box h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 48.8px;
+    font-weight: 700;
+    line-height: 63px;
+  }
+  .hero-image{
+    height: 725px;
+    margin: 0;
+    margin-left: 50px;
+  }
+  .hero-download{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .store-image{
+    height: 47px;
+  }
+  .about-features-box{
+    width: 48%;
+  }
+  .about-image{
+    height: 526px;
+    margin-left: 15%;
+  }
+  .about-box{
+    justify-self: end;
+  }
+  
+  .feature-box h4{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .feature-box img{
+    width: 56px;
+  }
+  .feature-image{
+    height: 812px;
+    margin-left: 6%;
+    margin-top: 0;
+  }
+  .features:first-child .feature-box{
+    right: -40px;
+    position: relative;
+  }
+  .features:last-child .feature-box{
+    right: 90px;
+    position: relative;
+  }
+  .features:last-child .feature-box:last-child{
+    bottom: -230px;
+  }
+  .features:first-child .feature-box:last-child{
+    bottom: -262px;
+  }
+  .feature-box:nth-child(5){
+    margin-top: 0;
+  }
+
+  .profile-box{
+    width: 30%;
+  }
+
+  .contact-section {
+    height: 150px;
+    padding: 2% 1%;
+    width: 45%;
+  }
+  
 }
