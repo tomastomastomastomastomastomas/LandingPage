@@ -52,10 +52,6 @@ footer{
   display: flex; 
   align-content: center; 
   margin: 0;
-  gap: 10px;
-}
-
-.contacts-box:last-child{
   gap: 20px;
 }
 .contacts-icon{
@@ -455,10 +451,19 @@ header{
 }
 .profile-social li{
   width: 20%;
-  border-right: 1px solid grey;
   height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.profile-social li:last-child{
+.profile-social li i{
+  border-right: 1px solid grey;
+  padding-right: 35%;
+}
+.profile-social{
+  margin-left: 11%;
+}
+.profile-social li:last-child i{
   border-right: 0;
 }
 .profile{
@@ -509,10 +514,11 @@ main{
 }
 
 .page-social{
-  display: flex; padding: 0; width: 100%; justify-content: start;;
+  display: flex; padding: 0; width: 100%; justify-content: start; margin-left: -10%;
+  ;
 }
 .page-social li{
-  width: 20%;
+  width: 25%;
   border-right: 1px solid white;
   height: 24px;
 }
@@ -524,7 +530,7 @@ main{
   font-size: 31.25px; font-weight: 700; line-height: 47.25px;
 }
 .footer-social{
-  display: flex; justify-content: center;
+  display: flex; justify-content: center; align-items: center;
 }
 .footer-links{
   margin-top: 50px;
@@ -646,9 +652,6 @@ hr{
   .profile-container {
     width: 175px;
     height: 175px;
-  }
-  .profile-container span{
-    
   }
   .profile-box{
     padding: 3% 0%; width: 213px;
