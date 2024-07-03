@@ -351,29 +351,28 @@ header{
   z-index: 3;
   margin-bottom: 60px;
 }
-.profile-container span:first-child:before, .profile-container span:first-child::after{
+.profile-container span:before, .profile-container span::after{
   position: absolute;
   content: '';
-  width: 8px;
-  height: 4.5px;
-  background-color: mediumslateblue;
+  background-color: #5956e9;
   z-index: 1;
   border-radius: 50%;
+}
+
+.profile-container span:first-child:before, .profile-container span:first-child::after{
+  width: 8px;
+  height: 4.5px;
   bottom: -0.1px;
   right: 52%;
 }
 .profile-container span:first-child::after{
+  bottom: -0.1px;
   right: 44%;
 }
 
 .profile-container span:nth-child(2):before, .profile-container span:nth-child(2)::after{
-  position: absolute;
-  content: '';
   width: 8px;
   height: 4.5px;
-  background-color: mediumslateblue;
-  z-index: 1;
-  border-radius: 50%;
   top: -0.1px;
   right: 52%;
 }
@@ -382,13 +381,8 @@ header{
 }
 
 .profile-container span:nth-child(4):before, .profile-container span:nth-child(4)::after{
-  position: absolute;
-  content: '';
   width: 4.5px;
   height: 8px;
-  background-color: mediumslateblue;
-  z-index: 1;
-  border-radius: 50%;
   left: -0.1px;
   top: 52%;
 }
@@ -397,13 +391,8 @@ header{
 }
 
 .profile-container span:nth-child(5):before, .profile-container span:nth-child(5)::after{
-  position: absolute;
-  content: '';
   width: 4.5px;
   height: 8px;
-  background-color: mediumslateblue;
-  z-index: 1;
-  border-radius: 50%;
   right: -0.1px;
   top: 52%;
 }
@@ -417,7 +406,7 @@ header{
   align-self: center;
   width: 65%;
   height: 150%;
-  background-color: mediumslateblue;
+  background-color: #5956e9;
   transform: rotate(45deg);
   inset: 5px;
   z-index: 1;
