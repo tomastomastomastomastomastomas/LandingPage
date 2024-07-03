@@ -359,11 +359,11 @@ header{
   position: absolute;
   content: '';
   width: 8px;
-  height: 3px;
+  height: 4.5px;
   background-color: mediumslateblue;
   z-index: 1;
   border-radius: 50%;
-  bottom: 0;
+  bottom: -0.1px;
   right: 52%;
 }
 .profile-container span:first-child::after{
@@ -374,11 +374,11 @@ header{
   position: absolute;
   content: '';
   width: 8px;
-  height: 3px;
+  height: 4.5px;
   background-color: mediumslateblue;
   z-index: 1;
   border-radius: 50%;
-  top: 0;
+  top: -0.1px;
   right: 52%;
 }
 .profile-container span:nth-child(2)::after{
@@ -388,12 +388,12 @@ header{
 .profile-container span:nth-child(4):before, .profile-container span:nth-child(4)::after{
   position: absolute;
   content: '';
-  width: 3px;
+  width: 4.5px;
   height: 8px;
   background-color: mediumslateblue;
   z-index: 1;
   border-radius: 50%;
-  left: 0;
+  left: -0.1px;
   top: 52%;
 }
 .profile-container span:nth-child(4)::after{
@@ -403,12 +403,12 @@ header{
 .profile-container span:nth-child(5):before, .profile-container span:nth-child(5)::after{
   position: absolute;
   content: '';
-  width: 3px;
+  width: 4.5px;
   height: 8px;
   background-color: mediumslateblue;
   z-index: 1;
   border-radius: 50%;
-  right: 0;
+  right: -0.1px;
   top: 52%;
 }
 .profile-container span:nth-child(5)::after{
