@@ -48,7 +48,7 @@ footer{
   width: 100%;
   padding: 0;
 }
-.background-color{
+.background-color-white{
   background-color: white;
 }
 
@@ -62,11 +62,14 @@ footer{
   height: 18px;
 }
 
-#menu{
+.menu{
   display: flex;
   justify-content: center;
 }
-.menu{
+.nav-menu{
+  z-index: 4;
+  box-shadow: 0px 1px 10px 0px #0000001A;
+  position: fixed;
   margin-top: 30px;
   background-color: white;
   width: 90%;
@@ -75,9 +78,10 @@ footer{
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
+  box-shadow: 0px 1px 10px 0px #0000001A;
 }
 
-#logo{
+.logo{
   width: 130px;
 }
 .logo-box{
@@ -91,7 +95,7 @@ footer{
   border-radius: 5px;
   margin-left: -2%;
 }
-#burger-menu
+.burger-menu
 {
   justify-self: start;
   margin-right: 45px;
@@ -100,7 +104,7 @@ footer{
   margin-left: 5px;  
   z-index: 1;
 }
-#burger-menu input
+.burger-menu input
 {
   display: block;
   width: 40px;
@@ -112,7 +116,7 @@ footer{
   opacity: 0; 
   z-index: 3;
 }
-#burger-button
+.burger-button
 {
   width: 40px;
   height: 40px; 
@@ -123,7 +127,7 @@ footer{
   position: relative;
   z-index: 2;
 }
-#burger-button span
+.burger-button span
 {
   display: block;
   width: 33px;
@@ -138,34 +142,34 @@ footer{
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
 }
-#burger-button span:first-child
+.burger-button span:first-child
 {
   transform-origin: 0% 0%;
 }
-#burger-button span:last-child
+.burger-button span:last-child
 {
   transform-origin: 0% 100%;
 }
-#burger-menu input:checked ~ #burger-button span:first-child
+.burger-menu input:checked ~ .burger-button span:first-child
 {
   width: 20px;
   opacity: 1;
   transform: rotate(44deg) translate(7.5px, -1.5px);
   background: white;
 }
-#burger-menu input:checked ~ #burger-button span:nth-last-child(2)
+.burger-menu input:checked ~ .burger-button span:nth-last-child(2)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-#burger-menu input:checked ~ #burger-button span:last-child
+.burger-menu input:checked ~ .burger-button span:last-child
 {
   width: 20px;
   opacity: 1;
   transform: rotate(-44deg) translate(5.5px, 4px);
   background: white;
 }
-#burger-menu input:checked ~ #burger-button
+.burger-menu input:checked ~ .burger-button
 {
   z-index: 2;
   opacity: 1;
@@ -173,11 +177,11 @@ footer{
   border-radius: 100px;
   display: block;
 }
-#burger-menu input:checked 
+.burger-menu input:checked 
 {
   outline: none;
 }
-#burger-content
+.burger-content
 {
   position: absolute;
   width: 300px;
@@ -187,18 +191,16 @@ footer{
   border-radius: 10px;
   background: white;
   list-style-type: none;
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
-#burger-content li
+.burger-content li
 {
   padding: 10px 0 10px 85px;
   font-size: 22px;
 }
-#burger-menu input:checked ~ #burger-content
+.burger-menu input:checked ~ .burger-content
 {
   transform: none;
 }
@@ -208,7 +210,7 @@ footer{
   margin: 0 6%
 }
 header{
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .content{
@@ -242,10 +244,22 @@ header{
 }
 
 .hero-border{
-  border: 10px solid #7572FF; margin: 120px 2% 0 0%; padding: 3% 0; right: 0; width: 75%; justify-content: start; min-width: 300px; max-width: 500px;
+  border: 10px solid #7572FF; 
+  margin: 120px 2% 0 0%; 
+  padding: 3% 0; 
+  right: -10px; 
+  width: 80%; 
+  justify-content: start; 
+  min-width: 300px; 
+  max-width: 500px;
 }
 .hero-section{
-  display: flex; justify-content: center; align-items: end; flex-direction: column; overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: end; 
+  flex-direction: column; 
+  overflow: hidden;
+  margin-top: 18%;
 }
 .hero-box{
   width: 100%;
@@ -288,22 +302,37 @@ header{
 }
 
 .about-section{
-  display: flex; flex-direction: column;
+  display: flex; 
+  flex-direction: column;
 }
 .about-title{
-  align-self: center; margin-top: 80px;
+  align-self: center;
+  margin-top: 80px;
 }
 .about-content{
-  margin: 0% 8%; text-align: center; align-self: center;
+  margin: 0% 8%; 
+  text-align: center; 
+  align-self: center;
 }
 .about-image{
-  width: 75%; align-self: center; margin: 50px 0;
+  width: 75%; 
+  align-self: center; 
+  margin: 50px 0;
 }
 .about-features-box{
-  display: flex; flex-direction: column; align-items: center; padding-bottom: 50px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding-bottom: 50px;
 }
 .about-feature{
-  width: 95%; display: flex; align-items: start; padding: 2%; box-shadow: 0px 1px 10px 0px #0000001A; border-radius: 10px; margin: 12.5px 0;
+  width: 95%; 
+  display: flex; 
+  align-items: start; 
+  padding: 2%; 
+  box-shadow: 0px 1px 10px 0px #0000001A; 
+  border-radius: 10px; 
+  margin: 12.5px 0;
 }
 .about-checkbox-image{
   margin-top: 15px;
@@ -318,7 +347,11 @@ header{
 }
 
 .feature-section{
-  text-align: center; display: flex; flex-direction: column; align-items: center; padding-bottom: 50px;
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding-bottom: 50px;
 }
 .feature-title{
   padding-top: 80px;
@@ -330,15 +363,19 @@ header{
   margin-top: 50px;
 }
 .feature{
-  padding: 0 90px; line-height: 30px;
+  padding: 0 90px; 
+  line-height: 30px;
 }
 .feature-info{
-  padding: 0 70px; line-height: 24px; margin: 0;
+  padding: 0 70px; 
+  line-height: 24px; 
+  margin: 0;
 }
 
-
 .feature-image{
-  height: 468px; margin-left: 37px; margin-top: 15px;
+  height: 468px;
+  margin-left: 37px; 
+  margin-top: 15px;
 }
 
 .profile-container {
@@ -431,7 +468,10 @@ header{
   z-index: 2;
 }
 .profile-image{
-  width: 198px; align-self: center; z-index: 3; height: 198px;
+  width: 198px; 
+  align-self: center; 
+  z-index: 3; 
+  height: 198px;
 }
 .profile-name{
   font-size: 31.25px;
@@ -439,7 +479,10 @@ header{
   padding-bottom: 12px;
 }
 .profile-social{
-  display: flex; padding: 0; width: 100%; justify-content: center;
+  display: flex; 
+  padding: 0; 
+  width: 100%; 
+  justify-content: center;
 }
 .profile-social li{
   width: 20%;
@@ -459,13 +502,23 @@ header{
   border-right: 0;
 }
 .profile{
-  display: flex; flex-direction: column;
+  display: flex; 
+  flex-direction: column;
 }
 .profile-box{
-  display: flex; flex-direction: column; align-items: center; padding: 9% 4%; box-shadow: 0px 0px 20px 1px #0000001A; border-radius: 10px; margin-bottom: 25px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 9% 4%; 
+  box-shadow: 0px 0px 20px 1px #0000001A; 
+  border-radius: 10px; 
+  margin-bottom: 25px;
 }
 .profile-section{
-  text-align: center; display: flex; flex-direction: column; align-items: center;
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
 }
 .profile-info{
   margin: 18px 0 10px 0;
@@ -480,25 +533,48 @@ header{
 }
 
 .contact-section{
-  display: flex; align-self: center; position: relative; bottom: -190px; height: 310px; flex-direction: column; padding: 9% 4%; box-shadow: 0px 0px 20px 1px #0000001A; border-radius: 10px; width: 80%;
+  display: flex; 
+  align-self: center; 
+  position: relative; 
+  bottom: -190px; 
+  height: 310px; 
+  flex-direction: column; 
+  padding: 9% 4%; 
+  box-shadow: 0px 0px 20px 1px #0000001A; 
+  border-radius: 10px; 
+  width: 80%;
 }
 main{
-  display: flex; flex-direction: column;
+  display: flex; 
+  flex-direction: column;
 }
 .contact-1, .contact-2{
-  height: 50%; display: flex; flex-direction: column; align-items: center; gap: 35px; justify-content: start;
+  height: 50%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 35px; 
+  justify-content: start;
 }
 .contact-2{
   justify-content: end;
 }
 .contact-icon-background{
-  background-color: royalblue; height: 50px; width: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+  background-color: royalblue; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 .contact-icon{
   height: 20px;
 }
 .contact-division{
-  border: 2px solid black; width: 30%; align-self: center;
+  border: 2px solid black; 
+  width: 30%; 
+  align-self: center;
 }
 .main-contacts{
   display: flex;
@@ -506,8 +582,11 @@ main{
 }
 
 .page-social{
-  display: flex; padding: 0; width: 100%; justify-content: start; margin-left: -10%;
-  ;
+  display: flex; 
+  padding: 0; 
+  width: 100%; 
+  justify-content: start; 
+  margin-left: -10%;
 }
 .page-social li{
   width: 25%;
@@ -519,10 +598,14 @@ main{
 }
 
 .footer-logo{
-  font-size: 31.25px; font-weight: 700; line-height: 47.25px;
+  font-size: 31.25px; 
+  font-weight: 700; 
+  line-height: 47.25px;
 }
 .footer-social{
-  display: flex; justify-content: center; align-items: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 .footer-links{
   margin-top: 50px;
@@ -538,7 +621,12 @@ main{
   margin-bottom: 60px;
 }
 .footer-contact{
-  display: flex; width: 100%; background-color: white; border-radius: 4px; margin-top: 30px; justify-content: end;
+  display: flex; 
+  width: 100%; 
+  background-color: white; 
+  border-radius: 4px; 
+  margin-top: 30px; 
+  justify-content: end;
 }
 .footer-contact input{
   border: 1px solid white;
@@ -546,16 +634,27 @@ main{
   width: 100%;
 }
 .footer-contact button{
-  background-color: royalblue; border: 1px solid white; height: 46px; width: 52px; border-radius: 5px;
+  background-color: royalblue; 
+  border: 1px solid white;
+  color: white;
+  height: 46px; 
+  width: 52px; 
+  border-radius: 5px;
 }
 hr{
-  background-color: white; border: 0.5px solid white;margin-bottom: 25px;
+  background-color: white; 
+  border: 0.5px solid white;
+  margin-bottom: 25px;
 }
 .copyright-box{
-  display: flex; justify-content: center; align-items: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 .copyright{
-  font-size: 12.8px; font-weight: 300; text-align: center;
+  font-size: 12.8px; 
+  font-weight: 300; 
+  text-align: center;
 }
 .footer-contact-box .content{
   padding-top: 10px;
@@ -568,10 +667,18 @@ hr{
   }
 
   .hero-section{
-    flex-direction: row; align-items: center; margin-top: 210px; margin-bottom: 180px; justify-content: space-between; padding: 0 80px;
+    flex-direction: row; 
+    align-items: center; 
+    margin-top: 35%;
+    margin-bottom: 180px; 
+    justify-content: space-between; 
+    padding: 0 80px;
   }
   .hero-border{
-    border: 15px solid #7572FF; margin: 0px 2% 0 0%; padding: 2% 0; max-width: 45%;
+    border: 15px solid #7572FF; 
+    margin: 0px 2% 0 0%; 
+    padding: 2% 0; 
+    max-width: 45%;
   }
   .hero-box{
     left: -28%;
@@ -585,7 +692,8 @@ hr{
     height: 423px;
     margin: 0;
     margin-left: 10px;
-    right: -10%;
+    right: -13%;
+    min-width: none;
   }
 
   .about-content{
@@ -682,10 +790,25 @@ hr{
   }
 
   .contact-section{
-    display: flex; align-items: center; position: relative; bottom: -100px; height: 150px; padding: 4% 1%; box-shadow: 0px 0px 20px 1px #0000001A; border-radius: 10px; width: 80%; flex-direction: row; justify-content: space-between; 
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+    bottom: -100px; 
+    height: 150px; 
+    padding: 4% 1%; 
+    box-shadow: 0px 0px 20px 1px #0000001A; 
+    border-radius: 10px; 
+    width: 80%; 
+    flex-direction: row; 
+    justify-content: space-between; 
   }
   .contact-1, .contact-2{
-    width: 45%; gap: 20px; height: 50%; align-items: center; display: flex; flex-direction: row;
+    width: 45%;
+    gap: 20px; 
+    height: 50%; 
+    align-items: center; 
+    display: flex; 
+    flex-direction: row;
   }
   .contact-1{
     margin-left: 7%;
@@ -694,31 +817,46 @@ hr{
     justify-content: start;
   }
   .contact-division{
-    border: 2px solid black; height: 85%; align-self: center; width: 0; margin-left: -7%;
+    border: 2px solid black; 
+    height: 85%; 
+    align-self: center; 
+    width: 0; 
+    margin-left: -7%;
   }
   .contact-icon{
     height: 24px;
   }
   .contact-icon-background{
-    background-color: royalblue; height: 60px; width: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+    background-color: royalblue; 
+    height: 60px; 
+    width: 60px; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
   }
   
   .footer-content{
-    display: flex; align-content: start;
+    display: flex; 
+    align-content: start;
   }
   .footer-content div:nth-child(2){
-    width: 44%; margin-top: 5px;
+    width: 44%; 
+    margin-top: 5px;
   }
   .footer-content div:first-child{
-    width: 44%; margin-top: 0; padding: 0 2% 0 0; 
+    width: 44%; 
+    margin-top: 0; 
+    padding: 0 2% 0 0; 
   }
   .footer-contact-box{
-    margin-top: 5px; margin-left: 20px;
+    margin-top: 5px; 
+    margin-left: 20px;
   }
   .footer-contact{
     width: 100%;
   }
-  #logo{
+  .logo{
     width: 167px;
   }
   .logo-box{
@@ -733,7 +871,7 @@ hr{
     border-radius: 5px;
     margin-left: 8%;
   }
-  .menu{
+  .nav-menu{
     height: 60px;
   }
   .download-button{
@@ -749,10 +887,21 @@ hr{
 }
 @media (min-width: 1023px) {
   .hero-section{
-    flex-direction: row; align-items: center; margin-top: 100px; margin-bottom: 180px; justify-content: space-between; padding: 0 0 0 6%; display: flex; width: 94%;
+    flex-direction: row; 
+    align-items: center; 
+    margin-top: 30%; 
+    margin-bottom: 180px; 
+    justify-content: space-between; 
+    padding: 0 0 0 6%; 
+    display: flex; 
+    width: 94%;
   }
   .hero-border{
-    border: 15px solid #7572FF; margin: 0px 0% 0 5%; padding: 2% 0; width: 570px; min-width: 450px;
+    border: 15px solid #7572FF; 
+    margin: 0px 0% 0 5%; 
+    padding: 2% 0; 
+    width: 570px; 
+    min-width: 450px;
   }
   .hero-box{
     left: -25%;
@@ -767,11 +916,12 @@ hr{
     line-height: 63px;
   }
   .hero-image{
-    height: 725px;
+    max-height: 725px;
+    min-height: 550px;
     margin: 0;
     margin-left: 0px;
     margin-right: 0%;
-    right: 0;
+    right: -30px;
   }
   .hero-download{
     font-size: 25px;
@@ -827,17 +977,19 @@ hr{
 
 
   .contact-section .content-title{
-    font-size: 16px; font-weight: 400;
+    font-size: 16px; 
+    font-weight: 400;
   }
   .profiles{
-    display: flex; justify-content: space-evenly;
+    display: flex; 
+    justify-content: space-evenly;
   }
 
-  #burger-button
+  .burger-button
   {
     display: none;
   }
-  #burger-menu
+  .burger-menu
   {
     display: none;
   }
@@ -892,7 +1044,7 @@ hr{
     margin-left: 0;
     background-color: red;
   }
-  .menu{
+  .nav-menu{
     height: 60px;
     width: 88%;
     padding-left: 3%;
