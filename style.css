@@ -54,7 +54,7 @@ footer{
 
 .contacts-box{
   display: flex; 
-  align-content: center; 
+  align-items: center; 
   margin: 0;
   gap: 20px;
 }
@@ -207,7 +207,6 @@ footer{
 
 .contacts{
   display: none;
-  margin: 0 0 2% 0;
   width: 90%;
 }
 header{
@@ -1054,6 +1053,10 @@ hr{
     width: 88%;
     padding-left: 3%;
     padding-right: 4px;
+  }
+  .contacts{
+    display: none;
+    width: 88%;
   }
   .menus-nav{
     margin-left: 0;
