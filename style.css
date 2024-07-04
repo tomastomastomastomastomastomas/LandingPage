@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   background-image: url(imgs/background/background.png); background-repeat: no-repeat; background-size: contain;
+  box-sizing: border-box;
 }
 section{
   padding: 0 3%;
@@ -14,6 +15,9 @@ h1, h2, h3, h4, h5 a, p, span, input, button, li{
   {
     background-size: auto;
   }
+}
+.menus-nav{
+  display: none;
 }
 .menus{
   display: none;
@@ -63,11 +67,11 @@ footer{
   justify-content: center;
 }
 .menu{
-  margin-top: 20px;
+  margin-top: 30px;
   background-color: white;
   width: 90%;
   display: flex;
-  height: 48px;
+  height: 40px;
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
@@ -80,11 +84,12 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
+  width: 80px;
   background-color: white;
-  padding: 30px 10px;
+  padding: 22px 10px;
   box-shadow: 0px 1px 10px 0px #0000001A;
   border-radius: 5px;
+  margin-left: -2%;
 }
 #burger-menu
 {
@@ -113,6 +118,7 @@ footer{
   height: 40px; 
   margin: 0;  
   padding: 0;
+  padding-top: 2px;
   display: block;
   position: relative;
   z-index: 2;
@@ -199,7 +205,7 @@ footer{
 
 .contacts{
   display: none;
-  margin: 0 5%
+  margin: 0 6%
 }
 header{
   margin-top: 30px;
@@ -223,9 +229,10 @@ header{
   background: royalblue;
   border-color: royalblue;
   border-style: none;
-  padding: 14px 7px;
+  padding: 13px 7px;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 10px;
+  margin-right: -2%;
 }
 .download-box{
   display: flex;
@@ -238,7 +245,7 @@ header{
   border: 10px solid #7572FF; margin: 120px 2% 0 0%; padding: 3% 0; right: 0; width: 75%; justify-content: start; min-width: 300px; max-width: 500px;
 }
 .hero-section{
-  display: flex; justify-content: center; align-items: end; flex-direction: column;
+  display: flex; justify-content: center; align-items: end; flex-direction: column; overflow: hidden;
 }
 .hero-box{
   width: 100%;
@@ -251,18 +258,12 @@ header{
   left: -28%;
 }
 .hero-image{
-  height: 521px;
+  position: static;
   align-self: center;
-  justify-self: end;
+  height: 521px;
   margin-top: 60px;
   margin-bottom: 90px;
-}
-.hero-image::after{
-  height: 30px;
-  background-color: black;
-  background: black;
-  color: black;
-  right: 100px;
+  margin-left: 38%;
 }
 .hero-title{
   line-height: 37.5px;
@@ -326,14 +327,16 @@ header{
   padding: 0 40px;
 }
 .feature-box{
-  margin-top: 45px;
+  margin-top: 50px;
 }
 .feature{
   padding: 0 90px; line-height: 30px;
 }
 .feature-info{
-  padding: 0 70px; line-height: 24px;
+  padding: 0 70px; line-height: 24px; margin: 0;
 }
+
+
 .feature-image{
   height: 468px; margin-left: 37px; margin-top: 15px;
 }
@@ -483,7 +486,7 @@ main{
   display: flex; flex-direction: column;
 }
 .contact-1, .contact-2{
-  height: 50%; display: flex; flex-direction: column; align-items: center; gap: 20px; justify-content: start;
+  height: 50%; display: flex; flex-direction: column; align-items: center; gap: 35px; justify-content: start;
 }
 .contact-2{
   justify-content: end;
@@ -538,10 +541,12 @@ main{
   display: flex; width: 100%; background-color: white; border-radius: 4px; margin-top: 30px; justify-content: end;
 }
 .footer-contact input{
-  height: 50px; border: 1px solid white; border-radius: 4px 0 0 4px; width: 100%;
+  border: 1px solid white;
+  border-radius: 4px 0 0 4px;
+  width: 100%;
 }
 .footer-contact button{
-  background-color: royalblue; border: 1px solid white; height: 50x; width: 50px; border-radius: 5px;
+  background-color: royalblue; border: 1px solid white; height: 46px; width: 52px; border-radius: 5px;
 }
 hr{
   background-color: white; border: 0.5px solid white;margin-bottom: 25px;
@@ -563,7 +568,7 @@ hr{
   }
 
   .hero-section{
-    flex-direction: row; align-items: center; margin-top: 210px; margin-bottom: 180px; justify-content: space-evenly; padding: 0 80px;
+    flex-direction: row; align-items: center; margin-top: 210px; margin-bottom: 180px; justify-content: space-between; padding: 0 80px;
   }
   .hero-border{
     border: 15px solid #7572FF; margin: 0px 2% 0 0%; padding: 2% 0; max-width: 45%;
@@ -576,9 +581,11 @@ hr{
     margin-bottom: 10px;
   }
   .hero-image{
+    position: relative;
     height: 423px;
     margin: 0;
-    margin-left: 50px;
+    margin-left: 10px;
+    right: -10%;
   }
 
   .about-content{
@@ -615,9 +622,15 @@ hr{
   .features:last-child *{
     text-align: left;
   }
+  .features:last-child p{
+    margin-right: 10%;
+  }
   .features:first-child{
     right: -50px;
     position: relative;
+  }
+  .features:first-child p{
+    margin-left: 10%;
   }
   .features .feature-box:last-child{
     margin-top: 30px;
@@ -633,7 +646,13 @@ hr{
     height: 500px;
   }
   .feature-box:nth-child(3) p, .feature-box:nth-child(5) p{
-    padding: 0 15%;
+    padding: 0 0%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .feature-box:nth-child(5){
+    margin-top: 0;
+    margin-bottom: 4%;
   }
   .profiles{
     display: flex; gap: 35px;
@@ -655,24 +674,27 @@ hr{
   }
 
   .content-title{
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
   }
   .profile-info{
     padding: 0% 5%; 
   }
 
   .contact-section{
-    display: flex; align-items: center; position: relative; bottom: -100px; height: 150px; padding: 4% 1%; box-shadow: 0px 0px 20px 1px #0000001A; border-radius: 10px; width: 80%; flex-direction: row; justify-content: space-between;
+    display: flex; align-items: center; position: relative; bottom: -100px; height: 150px; padding: 4% 1%; box-shadow: 0px 0px 20px 1px #0000001A; border-radius: 10px; width: 80%; flex-direction: row; justify-content: space-between; 
   }
   .contact-1, .contact-2{
-    width: 45%; gap: 8px; height: 50%; align-items: center; display: flex; flex-direction: row;
+    width: 45%; gap: 20px; height: 50%; align-items: center; display: flex; flex-direction: row;
+  }
+  .contact-1{
+    margin-left: 7%;
   }
   .contact-2{
     justify-content: start;
   }
   .contact-division{
-    border: 2px solid black; height: 85%; align-self: center; width: 0;
+    border: 2px solid black; height: 85%; align-self: center; width: 0; margin-left: -7%;
   }
   .contact-icon{
     height: 24px;
@@ -696,16 +718,46 @@ hr{
   .footer-contact{
     width: 100%;
   }
+  #logo{
+    width: 167px;
+  }
+  .logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 30px;
+    background-color: white;
+    padding: 30px 10px;
+    box-shadow: 0px 1px 10px 0px #0000001A;
+    border-radius: 5px;
+    margin-left: 8%;
+  }
+  .menu{
+    height: 60px;
+  }
+  .download-button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    margin-right: 1%;
+  }
+  footer{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 @media (min-width: 1023px) {
   .hero-section{
-    flex-direction: row; align-items: center; margin-top: 100px; margin-bottom: 180px; justify-content: space-evenly; padding: 0 80px;
+    flex-direction: row; align-items: center; margin-top: 100px; margin-bottom: 180px; justify-content: space-between; padding: 0 0 0 6%; display: flex; width: 94%;
   }
   .hero-border{
-    border: 15px solid #7572FF; margin: 0px 2% 0 0%; padding: 2% 0; width: 550px;
+    border: 15px solid #7572FF; margin: 0px 0% 0 5%; padding: 2% 0; width: 570px; min-width: 450px;
   }
   .hero-box{
     left: -25%;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
   .hero-box h1{
     margin-top: 0;
@@ -717,7 +769,9 @@ hr{
   .hero-image{
     height: 725px;
     margin: 0;
-    margin-left: 50px;
+    margin-left: 0px;
+    margin-right: 0%;
+    right: 0;
   }
   .hero-download{
     font-size: 25px;
@@ -771,10 +825,9 @@ hr{
     width: 30%;
   }
 
-  .contact-section {
-    height: 150px;
-    padding: 2% 1%;
-    width: 45%;
+
+  .contact-section .content-title{
+    font-size: 16px; font-weight: 400;
   }
   .profiles{
     display: flex; justify-content: space-evenly;
@@ -806,24 +859,70 @@ hr{
   .menus:last-child{
     justify-content: start;
   }
-  .menu{
-    padding-left: 2%;
-    height: 60px;
+  .menus-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 33%;
+    margin: 0 5px;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-right: 0;
   }
-  #logo{
-    width: 167px;
+  .contact-1{
+    margin-left: 0;
+  }
+  .contact-section {
+    height: 150px;
+    padding: 2% 8%;
+    width: 50%;
+}
+  .contact-division{
+    margin-left: 0;
+  }
+  footer{
+    padding-left: 11%;
+    padding-right: 11%;
   }
   .logo-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 30px;
-    background-color: white;
-    padding: 30px 10px;
-    box-shadow: 0px 1px 10px 0px #0000001A;
-    border-radius: 5px;
+    margin-left: -2%;
   }
+  .menus-nav:last-child{
+    margin-left: 0;
+    background-color: red;
+  }
+  .menu{
+    height: 60px;
+    width: 88%;
+    padding-left: 3%;
+    padding-right: 4px;
+  }
+  .menus-nav{
+    margin-left: 0;
+  }
+
+  .logo-box + .menus-nav li:first-child{
+    margin-left: -8%;
+  }
+  .content-title{
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .profile-box .content-title{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .profile-name{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .section-title{
+    font-size: 31px;
+    font-weight: 600;;
+  }
+  
 }
 @media (min-width: 1058px) {
   .features:last-child .feature-box:last-child{
